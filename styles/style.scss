@@ -1,0 +1,233 @@
+/*--------header----------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  body {
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  .ml-auto, .mx-auto {
+    margin-left: auto !important;
+  }
+  
+  #nav-bar {
+    position: sticky;
+    margin-top: 0;
+    z-index: 10;
+  }
+  
+  .navbar {
+    background-image: linear-gradient(to right, #142d4c, #142d4c);
+    padding: 0 !important;
+  }
+  
+  .navbar-brand img {
+    height: 60px;
+    padding-left: 20px;
+  }
+  
+  .navbar-nav li {
+    padding: 0 10px;
+  
+    a {
+      color: #fff !important;
+      font-weight: 600;
+      float: right;
+      text-align: left;
+    }
+  }
+  
+  .navbar-toggler-icon {
+    color: white;
+    font-size: 30px !important;
+  }
+  
+  .navbar-toggler {
+    outline: none !important;
+  }
+  
+  /*---------cursor-blink-----*/
+  body {
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+  
+  .box h1::after {
+    content: "";
+    width: 7px;
+    height: 40px;
+    background: aquamarine;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+  
+  .name-color {
+    color: aquamarine;
+  }
+  
+  .p-1 {
+    font-size: 22px;
+  }
+  
+  .p-2 {
+    font-size: 19px;
+  }
+  
+/*---------button-----*/
+.intro-button {
+    border: 1px solid;
+    transform: translate(-50%, -50%);
+  }
+  
+  .button {
+    position: relative;
+    text-align: center;
+    width: 150px;
+    font-weight: bolder;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: aquamarine;
+    font-weight: 300;
+    border: 1px solid aquamarine;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1.5s;
+    background-color: #142d4c;
+  }
+  
+  .img-2 {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .bottom-img {
+    position: relative;
+    width: 100%;
+  }
+  
+
+
+  /*--------banner----------*/
+  #banner {
+    background-image: linear-gradient(to right, #142d4c, #142d4c);
+    color: #fff;
+    padding-top: 5%;
+  }
+  
+  .main-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+  }
+ /*------languages--------*/
+ .services {
+    padding: 20px;
+  
+    h4 {
+      padding: 5px;
+      margin-top: 25px;
+      text-transform: uppercase;
+    }
+  }
+  
+  .title::before {
+    content: '';
+    background: #142d4c;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+  }
+  
+  /*---------about me-----*/
+  #about-us {
+    color: #fff;
+    background: #142d4c;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: block;
+    text-align: left;
+  }
+  
+  .about-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+  }
+  
+  #about-us ul li {
+    margin: 10px;
+  }
+  
+  .img-fluid {
+    text-align: left;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  
+ /*---------Projects-----*/
+ #social-media {
+    background: #fff;
+    color: black;
+    padding: 100px 0;
+  }
+  
+
+   /*---social--*/
+
+   #social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  #footer {
+    background-image: linear-gradient(to right, #142d4c, #142d4c);
+    color: #fff;
+  }
+  
+  .footer-img {
+    width: 100%;
+  }
+  
+  .footer-box {
+    padding: 20px;
+  }
+  
+  .footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.footer-box .fa {
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #142d4c, #142d4c);
+  }
+  
+  .footer-center {
+    margin: top 20%;
+  }
+  
