@@ -41,7 +41,7 @@ class Todo {
     }
 }
 
-// display the todo in the DOM;
+// display the todo in the DOM ;
 class UI{
     static displayData(){
         let displayData = todoArr.map((item) => {

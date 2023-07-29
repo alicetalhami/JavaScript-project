@@ -1,0 +1,58 @@
+body {
+    background-color: #8B0000;
+}
+
+ .grid {
+    border-radius: 50px;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #F0F8FF;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid wheat;
+    box-shadow: 10px 15px 5px black;
+
+ }
+
+ .grid h1 {
+    font-family: 'Edu SA Beginner', cursive;
+    background-color: #800000;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 50px;
+ }
+
+ .grid #question {
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 30px;
+    
+ }
+
+ .buttons {
+    margin-top: 30px;
+ }
+
+ #btn, #btn1,#btn2, #btn3 {
+    background-color: #800000;
+    width: 250px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+ }
+
+ #development {
+    font-size: 18px;
+
+ }
+
+ #btn:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #F0F8FF;
+
+ }
+
+ #btn:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+ }
