@@ -1,58 +1,93 @@
-body {
-    background-color: #8B0000;
-}
-
- .grid {
-    border-radius: 50px;
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #F0F8FF;
-    padding: 10px 50px 50px 50px;
-    border: 2px solid wheat;
-    box-shadow: 10px 15px 5px black;
-
+*, *::before, *::after {
+   box-sizing: border-box;
+   font-family: 'Roboto Slab', serif;
+ }
+ 
+ :root {
+   --hue-neutral: 200;
+   --hue-wrong: 0;
+   --hue-correct: 145;
+ }
+ 
+ body {
+   --hue: var(--hue-neutral);
+   padding: 0;
+   margin: 0;
+   display: flex;
+   width: 100vw;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(var(--hue), 100%, 20%);
+   background-color: darkred;
+   font-size: 40px;
+ }
+ 
+ body.correct {
+   --hue: var(--hue-correct);
+ }
+ 
+ body.wrong {
+   --hue: var(--hue-wrong);
+ }
+ 
+ .container {
+   width: 800px;
+   max-width: 80%;
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px;
+   box-shadow: 0 0 10px 2px;
+ }
+ 
+ .btn-grid {
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+   gap: 10px;
+   margin: 20px 0;
+ }
+ 
+ .btn {
+   --hue: var(--hue-neutral);
+   border: 1px solid hsl(var(--hue), 100%, 30%);
+   background-color: hsl(var(--hue), 100%, 50%);
+   border-radius: 5px;
+   padding: 5px 10px;
+   color: white;
+   outline: none;
+ }
+ 
+ .btn:hover {
+   border-color: black;
+ }
+ 
+ .btn.correct {
+   --hue: var(--hue-correct);
+   color: black;
+ }
+ 
+ .btn.wrong {
+   --hue: var(--hue-wrong);
+ }
+ 
+ .start-btn, .next-btn {
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px 20px;
+ }
+ 
+ .controls {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .hide {
+   display: none;
  }
 
- .grid h1 {
-    font-family: 'Edu SA Beginner', cursive;
-    background-color: #800000;
-    text-align: center;
-    font-size: 60px;
-    border-radius: 50px;
- }
-
- .grid #question {
-    font-family: 'Edu SA Beginner', cursive;
-    font-size: 30px;
-    
- }
-
- .buttons {
-    margin-top: 30px;
- }
-
- #btn, #btn1,#btn2, #btn3 {
-    background-color: #800000;
-    width: 250px;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin: 10px 40px 10px 0px;
-    padding: 10px 10px;
- }
-
- #development {
-    font-size: 18px;
-
- }
-
- #btn:hover, #btn1:hover, #btn2:hover, #btn3:hover {
-    cursor: pointer;
-    background-color: #F0F8FF;
-
- }
-
- #btn:focus, #btn1:focus, #btn2:focus, #btn3:focus {
-    outline: 0;
+ h1 {
+   text-align: center;
+   font-family: 'Roboto Slab', serif;
+   font-size: 30px;
  }

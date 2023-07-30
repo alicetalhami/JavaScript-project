@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title> 
-    <link rel="stylesheet" href="quiz.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="grid">
-      <div class="quizApp">
-        <h1>F1 Quiz App</h1>
-        <hr style="margin-bottom: 20px" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="quiz.css" rel="stylesheet">
+  <script defer src="quiz.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Quiz App</title>
+</head>
 
-        <p id="question"></p>
 
-        <div class="buttons">
-          <button id="btn"><span id="choice"></span></button>
-          <button id="btn1"><span id="choice1"></span></button>
-          <button id="btn2"><span id="choice2"></span></button>
-          <button id="btn3"><span id="choice3"></span></button>
-        </div>
-        <hr style="margin-top: 50px" />
+<body>
 
-        <footer>
-          <p id="development">Question x of y.</p>
-        </footer>
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
       </div>
     </div>
-
-    <script src="quiz.js"></script>
-    <script src="app.js"></script>
-    <script src="question.js"></script>
-
-
-
-  </body>
+    <h1>F1 QUIZ ♡  </h1>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+</body>
 </html>
