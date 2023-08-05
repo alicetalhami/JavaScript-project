@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "watch:scss": "node-sass -w styles/style.scss styles/style.css"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-sass": "^9.0.0",
+    "socket.io": "^4.7.2"
+  }
+}
